@@ -1,0 +1,109 @@
+.booking-form-overlay {
+    position: fixed;
+    left: 0;    
+    top: 0;
+    width: 100vw;
+    height: 100vh; /* Adjust this value as needed to move it lower */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+}
+
+.booking-form {
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    background: #ccc;
+}
+
+
+/* Styling the header */
+.booking-form h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #073663;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+    color: #292a28; /* Darker color for labels */
+    margin-bottom: 5px;
+    display: block; /* Ensure label stays above input */
+}
+
+/* Floating label style */
+.form-floating {
+    position: relative;
+}
+
+/* Input styling */
+input.form-control {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Soft border */
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #007bff; /* Focus border color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+}
+
+input.form-control.is-invalid {
+    border-color: #dc3545; /* Red border for invalid input */
+}
+
+input.form-control.is-valid {
+    border-color: #28a745; /* Green border for valid input */
+}
+
+/* Styling the error message */
+.text-danger {
+    color: #dc3545;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* Button styling */
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary:disabled {
+    background-color: #ccc;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* .d-flex {
+    justify-content: space-between;
+} */
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .booking-form {
+        width: 90%;
+        padding: 20px;
+    }
+}

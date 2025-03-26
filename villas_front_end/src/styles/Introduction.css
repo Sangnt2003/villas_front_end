@@ -1,0 +1,47 @@
+.introduction-container {
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 90%;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.greeting, .intro-text, .subheading, p, ul, ol {
+    font-size: 1.1rem;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 1.8rem;
+    color: #16a085;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+.signature {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    text-align: right;
+    margin-top: 30px;
+}

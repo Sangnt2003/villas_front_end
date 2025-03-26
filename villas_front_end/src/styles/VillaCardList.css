@@ -1,0 +1,134 @@
+.villa-card-list-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.villa-card-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding: 16px 0;
+    overflow-x: hidden;
+    width: 90%;
+    justify-content: center;
+}
+
+.villa-card {
+    flex: 1 1 22%;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;  
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    padding: 0 !important;
+}
+
+.villa-card-rating-container,
+.emotion-container,
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Bo góc cho các phần tử */
+}
+
+.villa-card-rating {
+    background-color: #003B95; /* Màu nền cho rating */
+    color: white; /* Màu chữ trắng */
+    padding: 5px; /* Khoảng cách trong phần tử */
+    border-radius: 5px; /* Bo góc cho phần rating */
+    width: 35px;
+}
+
+.villa-card-img {
+    height: 400px !important; /* Cố định chiều cao cho ảnh */
+    width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của card */
+    object-fit: cover; /* Làm cho ảnh phủ đầy thẻ mà không bị méo */
+}
+
+.heart-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);   
+}
+
+.heart-overlay i {
+    color: #ff5a5f; 
+    font-size: 1.5rem;
+}
+
+.villa-card:hover .heart-overlay {
+    transform: scale(1.2); 
+    transition: transform 0.2s ease-in-out;
+}
+
+.villa-card:hover {
+    transform: scale(1.05);
+}
+
+.villa-card-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.price-highlight {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #ffd700;
+  }
+.promotion {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    z-index: 1000;
+  }
+  
+.pagination-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pagination-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left-btn {
+    left: 183px; 
+    z-index: 1000;
+}
+
+.right-btn {
+    right: 183px;
+    z-index: 1000;  
+}

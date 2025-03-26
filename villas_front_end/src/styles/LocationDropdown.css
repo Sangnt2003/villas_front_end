@@ -1,0 +1,62 @@
+.location-dropdown-container {
+    display: inline-block;
+    position: relative;
+}
+
+.location-select {
+    font-weight: bold;
+    color: #333;
+    background-color: transparent;
+    border: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    color:white;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.location-select:focus {
+    outline: none;
+    border-color: #f0a500;
+}
+
+.location-select option {
+    color: #333;
+    background-color: #efebeb;
+}
+
+.location-select option:checked {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.location-select::-ms-expand {
+    display: none;
+}
+
+.location-dropdown-container::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+}
+
+.location-select {
+    max-height: 200px; /* Chiều cao tối đa của dropdown */
+    overflow-y: auto; /* Cho phép scroll */
+    scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+    -ms-overflow-style: none; /* Ẩn thanh cuộn trên IE/Edge */
+}
+
+.location-select::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên Chrome/Safari */
+}
