@@ -1,0 +1,52 @@
+.notification-container {
+    position: relative;
+}
+
+.notification-icon {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.notification-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 10px;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.no-notifications {
+    padding: 10px;
+    color: #888;
+}
+
+.notification-item h5 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.notification-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.notification-item span {
+    font-size: 12px;
+    color: #999;
+}

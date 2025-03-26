@@ -1,0 +1,136 @@
+/* Container chính cho FilterPanel */
+.filter-panel {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+}
+
+/* Tiêu đề các bộ lọc */
+.filter-panel h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* Các slider container */
+.slider-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Thanh trượt */
+.rc-slider {
+  margin-top: 10px;
+}
+
+.rc-slider-track {
+  background-color: #2DBE60 !important;
+}
+
+.rc-slider-handle {
+  border-color: #2DBE60;
+  background-color: #2DBE60;
+  box-shadow: 0 0 5px rgba(45, 190, 96, 0.6);
+}
+
+/* Tinh chỉnh cho slider label */
+label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Các trường nhập liệu (input) */
+.date-filters input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  font-size: 14px;
+}
+
+.date-filters input:focus {
+  outline: none;
+  border-color: #2DBE60;
+  box-shadow: 0 0 5px rgba(45, 190, 96, 0.6);
+}
+
+/* Các select dropdown */
+.form-select {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #2DBE60;
+  box-shadow: 0 0 5px rgba(45, 190, 96, 0.6);
+}
+
+/* Lỗi hiển thị */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fdd;
+  border-radius: 5px;
+}
+
+/* Các phần tử khối (div) của filter */
+.filter-panel > div {
+  margin-bottom: 20px;
+}
+
+/* Styling cho các slider container */
+.price-filters .slider-container,
+.capacity-filter .slider-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Thiết kế tổng thể: spacing, alignment */
+.filter-panel h3,
+.filter-panel label,
+.filter-panel select {
+  margin-bottom: 10px;
+}
+
+.filter-panel .form-select,
+.filter-panel .slider-container {
+  width: 100%;
+}
+
+.filter-panel .slider-container label {
+  font-weight: 600;
+}
+
+/* Tạo sự tương phản cho các slider khi hover */
+.rc-slider-handle:hover {
+  background-color: #32a852;
+  border-color: #32a852;
+}
+
+/* Add hover effect for select */
+.form-select:hover {
+  border-color: #32a852;
+}
+

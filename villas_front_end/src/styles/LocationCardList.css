@@ -1,0 +1,81 @@
+.location-card-list-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.location-card-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding: 16px 0;
+    overflow-x: hidden;
+    width: 90%;
+    justify-content: center;
+}
+
+.location-card {
+    cursor: pointer;
+    position: relative; 
+    width: 250px; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.location-card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.location-card:hover {
+    transform: scale(1.2); 
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.location-card:hover {
+    transform: scale(1.05);
+}
+
+.location-card-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.pagination-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.pagination-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left-btn {
+    left: 70px; 
+    z-index: 1000;
+}
+
+.right-btn {
+    right: 70px;
+    z-index: 1000;  
+}

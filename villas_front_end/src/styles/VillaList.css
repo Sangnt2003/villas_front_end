@@ -1,0 +1,28 @@
+.villa-list-page{
+    align-items: center;
+}
+
+.items-villa{
+    background: #ccc;
+}
+
+.items-villa h3{
+    color: #003C71;
+}
+
+.no-results-message {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FF6F61; /* Màu sắc nổi bật */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da; /* Nền màu đỏ nhẹ */
+    border: 1px solid #f5c6cb; /* Viền màu đỏ nhẹ */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.no-results-message p{
+    margin: 0;
+    padding: 10px 0;
+}

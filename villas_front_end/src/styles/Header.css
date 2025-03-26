@@ -1,0 +1,35 @@
+.nav-item{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensure the dropdown menu is displayed */
+}
+.location-dropdown{
+    text-decoration: none !important; /* Gỡ bỏ gạch chân (nếu là link) */
+    background-color: inherit !important; /* Không thay đổi màu nền */
+    color: white;
+    margin-left: 7px;
+}
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}

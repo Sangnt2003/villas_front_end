@@ -1,0 +1,101 @@
+/* Tổng quan */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-content-container {
+    padding-top: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Cards */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Table */
+.table-section {
+    margin-bottom: 30px;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.dashboard-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.dashboard-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dashboard-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Chart Section */
+.chart-section {
+    text-align: center;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.bar {
+    width: 18%;
+    background-color: #3498db;
+    transition: background-color 0.3s;
+}
+
+.bar:hover {
+    background-color: #1abc9c;
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}

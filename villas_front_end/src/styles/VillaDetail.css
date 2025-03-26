@@ -1,0 +1,194 @@
+.villa-detail {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  max-width: 80%;
+}
+.card-detail{
+  display: flex;
+  justify-content: center;
+}
+.villa-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003C71;
+}
+.villa-review::-webkit-scrollbar {
+  width: 0px !important; /* Ẩn thanh cuộn */
+}
+
+/* Ẩn thanh cuộn trên Firefox */
+.villa-review {
+  scrollbar-width: none; /* Ẩn thanh cuộn */
+}
+.villa-review {
+    max-height: 700px; /* Giới hạn chiều cao */
+    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+    scrollbar-width: hidden;
+    border-right: solid 1px #ccc;
+}
+
+.villa-review h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: solid 2px #003C71;
+  color: #003C71;
+}
+
+.review-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.review-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review-rating {
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.review-item p {
+  font-size: 17px;
+  color: #555;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.header-villa-detail{
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.rating {
+  font-size: 1.1rem;
+  color: #999;
+  margin-top: 5px;
+}
+
+.address-villa {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #e60000;
+}
+
+.main-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-image img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-image:hover img {
+  transform: scale(1.05);
+}
+
+.promotion {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 0, 0, 0.8);
+  padding: 5px 12px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.price-highlight {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Cải tiến cho phần mô tả */
+.description-paragraph {
+  font-size: 1.4rem; /* Cỡ chữ hợp lý cho văn bản mô tả */
+  color: #444; /* Màu chữ tối hơn để dễ nhìn hơn */
+  text-align: justify; /* Căn đều hai bên cho văn bản */
+  text-indent: 1em; /* Thụt đầu dòng để văn bản gọn gàng hơn */
+  border-radius: 5px; /* Bo góc để mềm mại hơn */
+}
+
+/* Để các đoạn mô tả cách nhau tốt hơn */
+.description-paragraph:first-of-type {
+  margin-top: 0; /* Không có khoảng cách trên cho đoạn đầu tiên */
+}
+
+.description-paragraph:last-of-type {
+  margin-bottom: 0; /* Không có khoảng cách dưới cho đoạn cuối cùng */
+}
+
+/* Tăng cường sự hiển thị cho tiêu đề trong mô tả */
+.villa-description-title {
+  font-size: 1.4rem; /* Tăng cỡ chữ của tiêu đề */
+  font-weight: bold; /* Làm đậm tiêu đề */
+  color: #003C71; /* Màu sắc nổi bật cho tiêu đề */
+  margin-bottom: 1em; /* Khoảng cách dưới tiêu đề */
+  text-transform: uppercase; /* Chữ hoa cho tiêu đề */
+}
+
+/* Thêm khoảng cách cho các đoạn văn để dễ đọc hơn */
+.villa-description {
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 8px; /* Bo góc cho phần mô tả */
+}
+
+
+.booking-btn {
+  font-size: 1.2rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  width: 50%;
+  transition: background-color 0.3s;
+}
+
+.booking-btn:hover {
+  background-color: #e65c00;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 1.1rem;
+}

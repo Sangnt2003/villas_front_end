@@ -1,0 +1,37 @@
+
+.modal-account{
+    width: 80%;
+}
+.title-hello{
+    border-bottom: #706f6f solid 1px;
+}
+.sidebar {
+    width: 400px;
+    padding: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sidebar-menu li:hover, .sidebar-menu li.active {
+    background-color: #ffc107;
+    color: white;
+    border-radius: 4px;
+}
+
+.content-area {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+}

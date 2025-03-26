@@ -1,0 +1,464 @@
+.search-form {
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 230px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;   
+}
+
+.date-input {
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.custom-select__input{
+    color: #333333;
+    font-size: 22px;
+}
+
+/* Ghi đè cho container của Select */
+.custom-select__control {
+    border-radius: 4px !important;
+    font-weight: bold !important;
+    font-size: 22px;
+    height: 86px;
+    color: #333333;
+    width: 100%;
+}
+.custom-select__menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: auto;
+    align-items: center;
+    gap: 20px;
+    overflow-y: scroll !important;
+}
+
+.css-b62m3t-container{
+    width: 100%;
+}
+.custom-option {
+    display: flex;
+    align-items: center;  
+    height: 70px;
+}
+.custom-select__value-container{
+    text-align: start !important;
+    margin-left: 10px;
+}
+.custom-option-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20%; /* Bo tròn ảnh */
+}
+
+.custom-option-text {
+    font-size: 22px; /* Kích thước chữ */
+    font-weight: bold;
+    color: #333333;
+    margin-left: 10px;
+}
+
+
+
+
+
+.date-input {
+    cursor: pointer;
+}
+
+/* Gộp thuộc tính của Select */
+.custom-select__input,
+.custom-select__control {
+    font-size: 22px;
+    color: #333333;
+}
+
+/* Dùng chỉ một định nghĩa width */
+.css-b62m3t-container {
+    width: 100%;
+}
+
+.custom-option {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+/* Tùy chỉnh các ô ngày chung */
+.rdrDay,
+.rdrDayToday,
+.rdrDayPassive {
+    box-sizing: border-box;
+    background-color: #ECF0F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rdrDayToday {
+    background-color: #F9AB52;
+    color: white;
+}
+
+.rdrDayNumber span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+/* Tùy chỉnh option đã chọn */
+.custom-select__option--is-selected {
+    background-color: white !important;
+    color: #333333 !important; 
+    font-size: 18px; 
+    font-weight: bold;
+  }
+  
+.date-display {
+    font-size: 20px;
+    background-color: white;
+    color: #333;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: auto !important;
+    height: 100%;
+}
+
+.date-display:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.input-capacity{
+    padding: 24.5px !important ;
+    font-size: 20px !important;
+}
+
+.search-form-large {
+    width: 100%; /* hoặc tùy ý */
+    padding: 20px;
+}
+
+.search-form-small {
+    width: 75%; /* hoặc tùy ý */
+    padding: 10px;
+}
+
+.input-group .btn {
+    font-size: 22px;
+    color: white;
+    background-color: #F9AB52;
+    border: none;
+    height: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 1000;
+}
+
+
+.input-group .form-control {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 11px;
+    width: 100px;
+}
+
+/* Nút tìm kiếm */
+.btn-search {
+    background-color: #F9AB52;
+    color: white;
+    border: none;
+    padding-right: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    white-space: nowrap;
+}
+
+.btn-search:hover {
+    background-color: #F9AB52;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date-range-wrapper {
+    position: absolute;
+    max-width: 820px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 16px;
+}
+
+.rdrCalendarWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.rdrMonth {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+/* Header của lịch */
+.rdrMonthName {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 8px;
+    color: #23527C;
+}
+
+.rdrDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 2px;
+}
+.rdrDays:hover {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.rdrDayDisabled *{
+    font-weight: normal !important;
+}
+.rdrDay {
+    border: 1px solid #ddd; /* Đường viền giữa các ô ngày */
+    box-sizing: border-box;
+    height: 40px; /* Chiều cao đồng nhất cho tất cả các ô */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important; 
+    background-color: #ECF0F5!important;
+}
+.rdrMonthPicker, .rdrYearPicker{
+    width: 50%;
+}
+.rdrMonthPicker select, .rdrYearPicker select{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.rdrDayNumber{
+    top:0px !important;
+    bottom: 0px !important;
+}
+.rdrDayNumber span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #0082BB    !important;
+    font-size: 18px;
+    height: 100%;
+    background-color: #ECF0F5 !important;
+}
+.btn-next, .btn-previous{
+    color: #0082BB !important;
+  }
+.rdrDayToday{
+    background-color: #F9AB52!important;
+    color: white!important;
+}
+.rdrDayPassive{
+    opacity: 0.0; /* Làm mờ các ngày đã qua */
+    pointer-events: none; /* Ngăn không cho người dùng chọn các ngày này */
+    background-color: #ECF0F5;
+}
+.rdrDaySelected{
+    font-weight: 100px;
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span {
+    color: red  !important;
+    font-weight: bold !important;
+}
+
+  .rdrDayHovered span,
+
+  .rdrDayEndPreview,
+  .rdrDayInPreview {
+    border: none !important; 
+    
+  }
+.month-nav-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.month-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rdrDay:hover{
+    border: 1px solid #ddd;
+}
+.rdrMonthAndYearWrapper {
+    display: none;
+}
+/* App.css */
+.rdrMonthsHorizontal {
+    order: -1 ; /* Di chuyển lên trên bằng cách thay đổi thứ tự */
+}
+.rdrMonths, .rdrMonthsHorizontal{
+    width: 100%;
+}
+.rdrNextPrevButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    margin: 0px !important;
+}
+.rdrWeekDays{
+    height: 30px;
+    
+}
+/* Ẩn toàn bộ nội dung trong các phần tử .rdrWeekDay */
+.rdrWeekDay {
+    visibility: hidden; 
+}
+
+
+.rdrWeekDay::before {
+    visibility: visible;  
+    display: inline-block; 
+}
+
+/* Chỉnh sửa nội dung cho từng ngày */
+.rdrWeekDay:nth-child(1)::before {
+    content: 'T2'; /* Thứ 2 */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #23527C;
+}
+.rdrDayToday .rdrDayNumber span:after {
+    content: none;
+}
+.rdrWeekDay:nth-child(2)::before {
+    content: 'T3'; /* Thứ 3 */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #23527C;
+}
+
+  
+  /* Make the font bold for selected days */
+.rdrDay.rdrSelected .rdrDayNumber span {
+    font-weight: bold !important;
+  }
+  
+  /* Remove bold font weight when not selected */
+  .rdrDay .rdrDayNumber span {
+    font-weight: normal !important;
+  }
+  
+.rdrWeekDay:nth-child(3)::before {
+    content: 'T4'; /* Thứ 4 */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #23527C;
+}
+
+.rdrWeekDay:nth-child(4)::before {
+    content: 'T5'; /* Thứ 5 */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #23527C;
+}
+
+.rdrWeekDay:nth-child(5)::before {
+    content: 'T6'; /* Thứ 6 */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #23527C;
+}
+
+.rdrWeekDay:nth-child(6)::before {
+    content: 'T7'; /* Thứ 7 */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #23527C;
+}
+
+.rdrWeekDay:nth-child(7)::before {
+    content: 'CN'; /* Chủ nhật */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #23527C;
+}
+
+.rdrPprevButton i, .rdrNextButton i{
+    border-width:12px;
+}
+.rdrNextPrevButton:hover {
+    color: #007bff;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .form-item {
+        max-width: 100%;
+    }
+
+    .date-display {
+        flex-direction: column;
+    }
+    .btn-search {
+        padding: 0.5rem;
+    }
+}
+
+

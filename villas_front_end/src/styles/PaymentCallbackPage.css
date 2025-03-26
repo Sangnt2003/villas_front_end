@@ -1,0 +1,79 @@
+.notification-container {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.notification-dropdown {
+    position: absolute;
+    top: 100%; /* Hiển thị dropdown bên dưới biểu tượng */
+    right: 0; /* Căn chỉnh dropdown sang bên phải */
+    background-color: #fff; /* Màu nền trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    border-radius: 8px; /* Bo góc */
+    width: 300px; /* Độ rộng của dropdown */
+    max-height: 400px; /* Chiều cao tối đa, nếu vượt quá sẽ hiển thị thanh cuộn */
+    overflow-y: auto; /* Hiển thị thanh cuộn khi cần */
+    z-index: 9999; /* Nổi lên trên các thành phần khác */
+    padding: 10px;
+}
+
+.notification-item {
+    border-bottom: 1px solid #f0f0f0; /* Đường kẻ giữa các thông báo */
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-item h5 {
+    margin: 0;
+    font-weight: 600;
+    color: #007bff; /* Màu tiêu đề xanh */
+    font-size: 16px;
+}
+
+.notification-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.notification-item span {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.notification-item:last-child {
+    border-bottom: none; /* Bỏ đường kẻ ở thông báo cuối */
+}
+
+.no-notifications {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Tùy chỉnh thanh cuộn */
+.notification-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notification-dropdown::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 4px;
+}
+
+.notification-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}

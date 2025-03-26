@@ -1,0 +1,94 @@
+.add-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Đảm bảo form luôn nằm giữa theo chiều dọc */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Tạo lớp nền mờ */
+    z-index: 1050;
+    overflow-y: auto; /* Thêm thanh kéo khi nội dung quá dài */
+}
+
+.modal-content-all-villa {
+    background: #fff;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+}
+.villa-services-checkboxes {
+    max-height: 200px;
+    overflow-y: auto; 
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+}
+
+.villa-services-checkboxes::-webkit-scrollbar {
+    display: none; 
+}
+.image-form-add-villa{
+    width: 100%;
+}
+.modal-content-all-villa::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên Chrome, Safari */
+}
+
+.image-form-add-villa-container {
+    position: relative;
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+    height: 150px; /* Chiều cao cố định của ảnh */
+    overflow: hidden; /* Đảm bảo ảnh không bị tràn */
+}
+
+.image-form-add-villa {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+    height: 150px; /* Chiều cao cố định */
+    object-fit: cover; /* Giữ nguyên tỷ lệ ảnh và cắt phần thừa */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Vị trí cách trên cùng */
+    right: 10px; /* Vị trí cách phải */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* Đảm bảo nút nằm trên ảnh */
+}
+.close-button:hover{
+    background: transparent;
+}
+.close-button i {
+    color: #dc3545; /* Màu đỏ cho nút thoát */
+    font-size: 2rem; /* Kích thước nút */
+}
+
+.form-select-discount, .form-select-location {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+/* Kiểu mặc định cho select */
+.form-select-location, 
+.form-select-discount {
+    border-color: #ced4da; /* Màu viền mặc định */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Hiệu ứng mượt */
+}
+
+/* Khi có focus */
+.form-select-location:focus, 
+.form-select-discount:focus{
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+

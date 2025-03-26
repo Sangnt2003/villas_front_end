@@ -1,0 +1,10 @@
+/* Add a cursor pointer to nav links */
+.nav-link-sidebar {
+    cursor: pointer; /* Show the hand cursor on hover */
+    margin: 10px 0px;
+}
+
+.nav-link-sidebar:hover {
+    background-color: #007bff; /* Optional: Add a background color on hover */
+    color: white; /* Change the text color on hover */
+}

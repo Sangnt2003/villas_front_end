@@ -1,0 +1,24 @@
+/* Đặt toàn bộ ứng dụng luôn chiếm đủ chiều cao màn hình */
+html, body, #root, .app {
+    height: 100%; /* Đảm bảo chiều cao 100% cho toàn bộ cấu trúc */
+    margin: 0; /* Xóa khoảng cách mặc định */
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    flex: 1; /* Nội dung chính chiếm phần lớn không gian */
+}
+
+footer {
+    margin-top: auto; 
+    position: sticky;
+}
+.container {
+    max-width: 1800px;
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1800px;
+    }
+}
